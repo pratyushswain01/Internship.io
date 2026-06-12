@@ -31,44 +31,51 @@ st.markdown("""
 
 html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
+[data-testid="stToolbar"] {
+    display: none;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
 /* Background */
-.stApp { background: linear-gradient(135deg, #0f1b2d 0%, #1a2f4a 50%, #0f1b2d 100%); }
+.stApp {
+    background: linear-gradient(135deg, #0f1b2d 0%, #1a2f4a 50%, #0f1b2d 100%);
+}
 
 /* Sidebar */
 [data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0a1628 0%, #142238 100%) !important;
     border-right: 1px solid rgba(255,215,0,0.15);
 }
-[data-testid="stSidebar"] * { color: #d4e0f0 !important; }
+
+[data-testid="stSidebar"] * {
+    color: #d4e0f0 !important;
+}
+
 [data-testid="stSidebar"] .stSelectbox label,
-[data-testid="stSidebar"] .stTextInput label { color: #8ba8c8 !important; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; }
+[data-testid="stSidebar"] .stTextInput label {
+    color: #8ba8c8 !important;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
 
 /* Hero title */
 .hero-title {
-    font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #ffd700 0%, #ff8c00 50%, #ffd700 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    line-height: 1.1;
-    margin-bottom: 0.2rem;
+    color: #ffd700;
 }
-.hero-subtitle { color: #7a9bbf; font-size: 1rem; margin-bottom: 1.5rem; letter-spacing: 0.03em; }
-
-/* Metric cards */
-.metric-card {
-    background: linear-gradient(135deg, rgba(255,215,0,0.08) 0%, rgba(255,140,0,0.04) 100%);
-    border: 1px solid rgba(255,215,0,0.2);
-    border-radius: 12px;
-    padding: 1.2rem 1.5rem;
-    text-align: center;
-    transition: transform 0.2s, border-color 0.2s;
-}
-.metric-card:hover { transform: translateY(-2px); border-color: rgba(255,215,0,0.45); }
-.metric-number { font-size: 2.2rem; font-weight: 700; color: #ffd700; line-height: 1; }
-.metric-label { font-size: 0.78rem; color: #7a9bbf; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.3rem; }
 
 /* Species card */
 .species-card {
