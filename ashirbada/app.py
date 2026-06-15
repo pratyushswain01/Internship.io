@@ -3001,7 +3001,7 @@ if __name__ == "__main__":
     print("║  DB:   disaster_mgmt.db (auto-seeded)    ║")
     print("║  Admin: admin@disaster.gov / admin123    ║")
     print("╚══════════════════════════════════════════╝\n")
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run()
 
     # ─────────────────────────────────────────────
 # ADDITIONAL HELPER ROUTES (for completeness)
@@ -3075,4 +3075,4 @@ if __name__ == "__main__":
     print("═"*60 + "\n")
     
     # Run the app
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run()
